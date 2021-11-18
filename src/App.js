@@ -9,6 +9,9 @@ function App() {
         <p>
           Sajt za mangulice
         </p>
+        <p>
+          Srbislav Vucenovic
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
