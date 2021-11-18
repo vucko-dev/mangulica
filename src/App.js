@@ -12,6 +12,9 @@ function App() {
         <p>
           Srbislav Vucenovic
         </p>
+        <p>
+          David Vucenovic 
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
