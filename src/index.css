@@ -1,13 +1,182 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background: #fff;
 }
+
+.navbar-collapse{
+  flex-direction: column;
+  align-items: flex-end!important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem;
+  color: #565387;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1px solid rgb(94, 56, 20);
+}
+
+.nav-link{
+  color:rgb(94, 56, 20)!important;
+}
+
+.navbar a:hover,
+#header .brand-name {
+  color: rgb(94, 56, 20);
+}
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header h2 {
+  color: #484848;
+  font-size: 24px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: rgb(94, 56, 20);
+  border: 2px solid rgb(94, 56, 20);
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: rgb(94, 56, 20);
+  color: #fff;
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+h6 {
+  color: #3e4555;
+}
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/*Galerija*/
+
+
+.mslike>ul{
+  list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mslike>ul>li{
+  margin: 10px;
+  height: 40vh;
+  flex-grow: 1;
+}
+
+.mslike>ul>li:last-child{
+  flex-grow:10;
+}
+
+.mslike>ul>li>a>img{
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  cursor: pointer;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .mslike > ul {
+    margin: 0;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .mslike > ul > li {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 480px) {
+  .mslike > ul > li {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .mslike > ul {
+    flex-direction: row;
+  }
+
+  .mslike > ul > li {
+    height: auto;
+    width: 100%;
+  }
+  .mslike > ul > li > a > img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
+.mslike > ul > li > a > img:hover {
+  transition: 1.5s;
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*************************************************/

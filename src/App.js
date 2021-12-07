@@ -1,31 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import { Routes, Route} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Pocetna from "./components/Pocetna";
+import OMangulicama from "./components/Omangulicama";
+import Zdravlje from "./components/Zdravlje";
+import Galerija from "./components/Galerija";
+import Kontakt from "./components/Kontakt";
+import Pitanja from './components/Pitanja';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Sajt za mangulice
-        </p>
-        <p>
-          Srbislav Vucenovic
-        </p>
-        <p>
-          David Vucenovic 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+  return(
+    <>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Pocetna/>} />
+        <Route exact path="/oMangulicama" element={<OMangulicama/>} />
+        <Route exact path="/zdravlje" element={<Zdravlje/>} />
+        <Route exact path="/galerija" element={<Galerija/>} />
+        <Route exact path="/pitanja" element={<Pitanja/>} />
+        <Route exact path="/kontakt" element={<Kontakt/>} />
+      </Routes>
+    </>
+  )
 }
 
 export default App;
