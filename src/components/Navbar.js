@@ -7,7 +7,7 @@ const Navbar = () => {
   const changeStyle = () => {
     console.log("you just clicked");
     
-    stil=="block!important"?setStyle("none!important"):setStyle("block!important");
+    stil==="block!important"?setStyle("none!important"):setStyle("block!important");
     console.log(stil);
   };
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
                 Mangulice
               </NavLink>
               <button className="navbar-toggler" type="button" onClick={changeStyle} >
-                <span className="navbar-toggler-icon"><img src={menu} style={{width:"30px",height:"30px"}}/></span>
+                <span className="navbar-toggler-icon"><img src={menu} alt="" style={{width:"30px",height:"30px"}}/></span>
               </button>
 
               <div

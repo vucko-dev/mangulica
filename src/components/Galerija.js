@@ -16,43 +16,43 @@ const Galerija = () => {
             <h1 style={{textAlign:"center"}}>Galerija</h1>
             <ul>
                 <li>
-                  <a href="#">
-                    <img src={slika1} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika1} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika2} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika2} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika3} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika3} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika4} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika4} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika5} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika5} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika6} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika6} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika7} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika7} alt="" loading="lazy"/>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src={slika8} alt loading="lazy"/>
+                  <a href="/#">
+                    <img src={slika8} alt="" loading="lazy"/>
                   </a>
                 </li>
             </ul>
